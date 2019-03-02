@@ -5,6 +5,8 @@ VisualStudioVersion = 15.0.28307.136
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WpfGitEdu", "WpfGitEdu\WpfGitEdu.csproj", "{58209217-E9BF-400F-B245-99A99CA91C54}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NewFeature", "NewFeature\NewFeature.csproj", "{1321C78D-5BF9-4A05-9F86-4BA0A1D087A6}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +17,10 @@ Global
 		{58209217-E9BF-400F-B245-99A99CA91C54}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{58209217-E9BF-400F-B245-99A99CA91C54}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{58209217-E9BF-400F-B245-99A99CA91C54}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1321C78D-5BF9-4A05-9F86-4BA0A1D087A6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1321C78D-5BF9-4A05-9F86-4BA0A1D087A6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1321C78D-5BF9-4A05-9F86-4BA0A1D087A6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1321C78D-5BF9-4A05-9F86-4BA0A1D087A6}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
