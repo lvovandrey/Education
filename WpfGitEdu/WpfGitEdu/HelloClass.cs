@@ -13,6 +13,7 @@ namespace WpfGitEdu
         {
             MessageBox.Show("Hello "+ s +"!!!!");
             MessageBox.Show("Hello 2" + s + "!!!!");
+            MessageBox.Show("Hello 3" + s + "!!!!");
         }
     }
 }
