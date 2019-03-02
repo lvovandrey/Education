@@ -11,7 +11,9 @@ namespace WpfGitEdu
     {
         public void Hello(string s)
         {
-            MessageBox.Show("How are you, "+ s +"?!!!");
+            MessageBox.Show("How are you, "+ s +"!!!!");
+            MessageBox.Show("How are you, 2" + s + "!!!!");
+            MessageBox.Show("How are you, 3" + s + "!!!!");
         }
     }
 }
