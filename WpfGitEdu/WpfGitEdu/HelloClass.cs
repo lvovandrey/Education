@@ -9,9 +9,9 @@ namespace WpfGitEdu
 {
     public class HelloClass
     {
-        public void Hello()
+        public void Hello(string s)
         {
-            MessageBox.Show("Hello world");
+            MessageBox.Show("Hello "+ s);
         }
     }
 }
