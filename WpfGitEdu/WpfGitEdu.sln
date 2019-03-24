@@ -9,6 +9,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NewFeature", "NewFeature\Ne
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ConsoleEducationCSharpStarter", "ConsoleEducationCSharpStarter\ConsoleEducationCSharpStarter.csproj", "{D60E630B-CF64-4491-95AD-C8F087AEE7AE}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WpfSQLiteExample", "WpfSQLiteExample\WpfSQLiteExample.csproj", "{F7782F1E-38B7-4FC5-BE3A-079DDB32AB41}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -27,6 +29,10 @@ Global
 		{D60E630B-CF64-4491-95AD-C8F087AEE7AE}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{D60E630B-CF64-4491-95AD-C8F087AEE7AE}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{D60E630B-CF64-4491-95AD-C8F087AEE7AE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F7782F1E-38B7-4FC5-BE3A-079DDB32AB41}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F7782F1E-38B7-4FC5-BE3A-079DDB32AB41}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F7782F1E-38B7-4FC5-BE3A-079DDB32AB41}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F7782F1E-38B7-4FC5-BE3A-079DDB32AB41}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
