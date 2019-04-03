@@ -20,10 +20,15 @@ namespace WpfSQLiteExample
         // добавление
         private void Add_Click(object sender, RoutedEventArgs e)
         {
+            
+
+            
+
             LevelWindow levelWindow = new LevelWindow(new Level());
             if (levelWindow.ShowDialog() == true)
             {
                 Level level = levelWindow.Level;
+               // level.Id = 1;
                 db.Levels.Add(level);
                 db.SaveChanges();
             }
