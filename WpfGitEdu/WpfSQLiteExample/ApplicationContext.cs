@@ -7,6 +7,7 @@ namespace WpfSQLiteExample
         public ApplicationContext() : base("DefaultConnection")
         {
         }
+
         public DbSet<Level> Levels { get; set; }
     }
 }
