@@ -11,5 +11,13 @@ namespace EF_codeFirst
         public int Id { get; set; }
         public string Name { get; set; }
         public int Age { get; set; }
+        public city City { get; set; }
+        public money Money { get; set; }
+    }
+
+    public class city
+    {
+        public string Name { get; set; }
+        public int CitizenCount { get; set; }
     }
 }

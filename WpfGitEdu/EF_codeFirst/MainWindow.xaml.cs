@@ -32,6 +32,10 @@ namespace EF_codeFirst
                 // создаем два объекта User
                 User user1 = new User { Name = "Tom", Age = 33 };
                 User user2 = new User { Name = "Sam", Age = 26 };
+                user1.City = new city { Name = "Moskow", CitizenCount = 100 };
+                user2.City = new city { Name = "Paris", CitizenCount = 120 };
+                user1.Money = new money { type = "cash", count = 10 };
+                user2.Money = new money { type = "bank", count = 12 };
 
                 // добавляем их в бд
                 db.Users.Add(user1);
