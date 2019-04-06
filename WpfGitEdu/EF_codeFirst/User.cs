@@ -13,6 +13,7 @@ namespace EF_codeFirst
         public int Age { get; set; }
         public city City { get; set; }
         public money Money { get; set; }
+        public List<friend> friends { get; set; }
     }
 
     public class city

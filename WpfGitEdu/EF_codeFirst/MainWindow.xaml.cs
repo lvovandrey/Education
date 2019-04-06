@@ -36,6 +36,14 @@ namespace EF_codeFirst
                 user2.City = new city { Name = "Paris", CitizenCount = 120 };
                 user1.Money = new money { type = "cash", count = 10 };
                 user2.Money = new money { type = "bank", count = 12 };
+                user1.friends = new List<friend>();
+                user2.friends = new List<friend>();
+
+                user1.friends.Add(new friend { Link = user2.Id });
+                user1.friends.Add(new friend { Link = 44 });
+                user2.friends.Add(new friend { Link = user1.Id });
+
+
 
                 // добавляем их в бд
                 db.Users.Add(user1);
