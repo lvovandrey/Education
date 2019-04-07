@@ -30,18 +30,20 @@ namespace EF_codeFirst
             using (UserContext db = new UserContext())
             {
                 // создаем два объекта User
-                User user1 = new User { Name = "Tom", Age = 33 };
-                User user2 = new User { Name = "Sam", Age = 26 };
+                Uri uri1 = new Uri(@"http:\\www.egg.egg");
+                Uri uri2 = new Uri(@"http:\\www.foo.egg");
+                User user1 = new User { Name = "Tom", WebPage = uri1 , Age = 33 };
+                User user2 = new User { Name = "Sam", WebPage = uri2 , Age = 26 };
                 user1.City = new city { Name = "Moskow", CitizenCount = 100 };
                 user2.City = new city { Name = "Paris", CitizenCount = 120 };
                 user1.Money = new money { type = "cash", count = 10 };
                 user2.Money = new money { type = "bank", count = 12 };
-                user1.friends = new List<friend>();
-                user2.friends = new List<friend>();
+                user1.friends = new List< friend>();
+                user2.friends = new List< friend>();
 
-                user1.friends.Add(new friend { Link = user2.Id });
-                user1.friends.Add(new friend { Link = 44 });
-                user2.friends.Add(new friend { Link = user1.Id });
+                user1.friends.Add( new friend { Link = 11});
+                user1.friends.Add( new friend { Link = 44 });
+                user2.friends.Add( new friend { Link = 22});
 
 
 
@@ -49,6 +51,7 @@ namespace EF_codeFirst
                 db.Users.Add(user1);
                 db.Users.Add(user2);
                 db.SaveChanges();
+            
                 L1.Items.Add("Объекты успешно сохранены");
 
                 // получаем объекты из бд и выводим на консоль
@@ -56,7 +59,7 @@ namespace EF_codeFirst
                 L1.Items.Add("Список объектов:");
                 foreach (User u in users)
                 {
-                    L1.Items.Add(string.Format("{0}.{1} - {2}", u.Id, u.Name, u.Age));
+                    L1.Items.Add(string.Format("{0}.{1} - {2}", u.Id, u.Name, u.WebPageDb));
                 }
             }
         }
